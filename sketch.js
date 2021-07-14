@@ -19,6 +19,9 @@ function setup() {
   engine = Engine.create();
   world = engine.world;
 
+  tower= new Tower(150,350,160,310);
+  ground= new Ground(0,599,2400,2);
+
   
 
 }
@@ -30,14 +33,9 @@ function draw() {
   
 
   Engine.update(engine);
+  tower.display()
+  ground.display()
 
   
  
 }
-
-
-
-
-
-
-
